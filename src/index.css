@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary: rgb(255, 255, 255);
+    --color-secondary: rgb(0, 0, 0);
+    --color-extremely-dark-gray: rgb(20, 20, 20);
+    --color-dark-gray: rgb(51, 51, 51);
+    --color-medium-gray: rgb(102, 102, 102);
+    --color-light-gray: rgb(204, 204, 204);
+    --color-very-light-gray: rgb(240, 240, 240);
+    --color-extremely-light-gray: rgb(250, 250, 250);
+    --color-receiver-gray: rgba(44, 44, 44, 0.67);
+    --color-success: rgb(102, 204, 102);
+    --color-success-light: rgb(224, 245, 224);
+    --color-success-dark: rgb(20, 41, 20);
+    --color-danger: rgb(255, 0, 0);
+    --color-danger-light: rgb(255, 204, 204);
+    --color-danger-dark: rgb(51, 0, 0);
+    --color-message: rgb(0, 128, 255);
+    --color-message-light: rgb(230, 242, 255);
+    --color-message-dark: rgb(0, 13, 26);
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+.hero-header>span {
+    transform: translateY(20px);
+    display: inline-block
+}
+
+.share {
+    display: 'inline-block';
+    opacity: 0
+}
+
+/* CSS spinner */
+
+.loader {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+.message-loader {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Emoji Picker */
+
+@media screen and (max-width: 540px) {
+    emoji-picker {
+        width: 100% !important;
+    }
+}
