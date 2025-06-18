@@ -176,7 +176,7 @@ export default function SideChatLeft({ setIsModal, setIsProfileModal }) {
     return (
         <div className="side-chats-left bg-primary dark:bg-secondary w-[100%] lg:w-[40%] lg:border overflow-hidden lg:border-light-gray dark:lg:border-dark-gray absolute lg:relative bg-primary z-100">
             <div className="flex justify-between items-center p-4 chat-header-left">
-                <div onClick={enableProfileModal} className="address text-sm text-secondary dark:text-primary font-semibold">{owner ? `${truncateAddress(owner)} (Me)` : 'Unauthenticated'}</div>
+                <div onClick={enableProfileModal} className="address text-sm text-secondary dark:text-primary font-semibold">{owner ? `${truncateAddress(owner)} (Me)` : ''}</div>
                 <div className="flex items-center gap-x-2">
                     {isDark ? <div onClick={toggleDarkMode} className='ring text-secondary dark:text-primary ring-extremely-light-gray dark:ring-extremely-dark-gray p-2 bg-extremely-light-gray dark:bg-extremely-dark-gray  size-8 rounded-full'>
                         <SunChat />
