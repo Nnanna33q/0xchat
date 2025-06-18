@@ -94,21 +94,16 @@ function Connect() {
     }
 
     async function verifyMessage({ message, signature, address }) {
-        const response = await fetch('http://localhost:3000/verify', {
+        const response = await fetch('/verify', {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ message, signature, address })
         })
-        if (response.ok) {
-            const data = await response.json();
-            if (data.success) {
-                window.location.href = '/app/chats'
-            } else {
-                throw (data.errorMessage);
-            }
-        } else {
-            throw "Failed to verify signature";
+        const data = await response.json();
+        if(!data.success) {
+            throw data.errorMessage;
         }
+        window.location.href = '/app/chats';
     }
 
     async function connect(e) {
