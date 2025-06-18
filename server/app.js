@@ -1,7 +1,6 @@
 import dotenv from "dotenv";
 dotenv.config();
 import express from 'express';
-import cors from 'cors';
 const app = express();
 import { HomeRouter } from "./routes/home.js";
 import { FeaturesRouter } from "./routes/features.js"
@@ -20,15 +19,9 @@ cloudinary.v2.config({ // Cloudinary configuration
     api_secret: process.env.CLOUDINARY_API_SECRET
 })
 
-app.use(cors({ origin: "http://localhost:5173" })); // Allows request from vite dev server
-// Remove the code above before pushing to prod
-
 app.use(express.static(path.resolve('dist')));
 
 app.use(sessionParser);  
-
-// Add functionality that disconnects wallet
-// if session is cleared or expired;
 
 // Attaches user's address to request object if session has been set
 app.use((req, res, next) => {

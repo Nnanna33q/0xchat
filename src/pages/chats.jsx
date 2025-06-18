@@ -39,27 +39,27 @@ function Chats() {
     useEffect(() => {
         // Fetches chatData
         async function fetchChatData() {
-            try {
-                const response = await fetch('http://localhost:3000/app/chat-data');
-                if (response.ok) {
-                    const chatResponseData = await response.json();
-                    if (chatResponseData.success) {
-                        setChatData(chatResponseData.data);
-                        chatResponseData.data.length > 0 && setSelectedChat(chatResponseData.data[chatResponseData.data.length - 1]);
-                        setOwner(chatResponseData.owner);
-                    } else {
-                        throw chatResponseData.errorMessage;
-                    }
+            const response = await fetch('/app/chat-data');
+            if (response.ok) {
+                const chatResponseData = await response.json();
+                if (chatResponseData.success) {
+                    setChatData(chatResponseData.data);
+                    chatResponseData.data.length > 0 && setSelectedChat(chatResponseData.data[chatResponseData.data.length - 1]);
+                    setOwner(chatResponseData.owner);
                 } else {
-                    throw 'Failed to fetch chat data';
+                    throw chatResponseData.errorMessage;
                 }
-            } catch (e) {
-                console.error(e);
-                setAlertFailure({ visible: true, msg: e });
+            } else {
+                throw 'Failed to fetch chat data';
             }
         }
 
-        fetchChatData();
+        try {
+            fetchChatData();
+        } catch (e) {
+            console.error(e);
+            setAlertFailure({ visible: true, msg: e });
+        }
     }, []);
 
     useEffect(() => {
@@ -153,7 +153,7 @@ function Chats() {
     }, [isDark])
 
     useEffect(() => {
-        const ws = new WebSocket('ws://localhost:3000/');
+        const ws = new WebSocket('/');
         setWs(ws);
         return () => {
             setWs(null);
