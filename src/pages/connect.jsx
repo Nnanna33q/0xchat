@@ -80,7 +80,7 @@ function Connect() {
 
     async function getNonce() {
         try {
-            const response = await fetch('http://localhost:3000/nonce');
+            const response = await fetch('/nonce');
             if (response.ok) {
                 const data = await response.json();
                 return data.nonce;
