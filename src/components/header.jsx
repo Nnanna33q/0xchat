@@ -47,7 +47,7 @@ export default function Header() {
                     ))}
                 </div>
                 <div className="hidden lg:flex lg:flex lg:justify-end">
-                    <a href="#" className="text-sm/6 font-semibold text-gray-900 dark:text-very-light-gray">
+                    <a href="/app/chats" className="text-sm/6 font-semibold text-gray-900 dark:text-very-light-gray">
                         Launch App <span aria-hidden="true">&rarr;</span>
                     </a>
                 </div>
