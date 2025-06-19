@@ -26,17 +26,8 @@ export default function FeaturesHero() {
                 >
                 </div>
                 <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-                    <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-                        <div className="relative rounded-full px-3 py-1 text-sm/6 text-gray-600 dark:text-very-light-gray ring-1 ring-light-gray hover:ring-medium-gray bg-primary dark:bg-secondary">
-                            Announcing our next round of funding.{' '}
-                            <a href="#" className="font-bold text-secondary dark:text-primary">
-                                <span aria-hidden="true" className="absolute inset-0" />
-                                Read more <span aria-hidden="true">&rarr;</span>
-                            </a>
-                        </div>
-                    </div>
                     <div className="text-center">
-                        <h1 ref={heroHeaderRef} className="hero-header text-4xl font-semibold tracking-tight text-balance text-secondary dark:text-primary sm:text-7xl">
+                        <h1 ref={heroHeaderRef} className="hero-header text-4xl font-semibold tracking-tight text-balance text-secondary dark:text-primary sm:text-5xl">
                             <span className="animate-h1">0</span><span className="animate-h1">x</span><span className="animate-h1">C</span><span className="animate-h1">h</span><span className="animate-h1">a</span><span className="animate-h1">t</span><span className="animate-h1 invisible">-</span><span className="animate-h1">F</span><span className="animate-h1">e</span><span className="animate-h1">a</span><span className="animate-h1">t</span><span className="animate-h1">u</span><span className="animate-h1">r</span>
                             <span className="animate-h1">e</span><span className="animate-h1">s</span>
                         </h1>

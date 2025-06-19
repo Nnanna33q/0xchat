@@ -39,21 +39,21 @@ export default function Hero() {
           </div>
           <div className="text-center">
             <h1 ref={heroHeaderRef} className="hero-header text-5xl font-semibold tracking-tight text-balance text-secondary dark:text-primary sm:text-7xl">
-              <span className="animate-h1">U</span><span className="animate-h1">n</span><span className="animate-h1">c</span><span className="animate-h1">e</span><span className="animate-h1">n</span><span className="animate-h1">s</span><span className="animate-h1">o</span><span className="animate-h1">r</span><span className="animate-h1">a</span><span className="animate-h1">b</span><span className="animate-h1">l</span><span className="animate-h1">e</span><span className="animate-h1 invisible">-</span>
-              <span className="animate-h1">W</span><span className="animate-h1">e</span><span className="animate-h1">b</span><span className="animate-h1">3</span><span className="animate-h1 invisible">-</span>
-              <span className="animate-h1">C</span><span className="animate-h1">h</span><span className="animate-h1">a</span><span className="animate-h1">t</span>
+              <div><span className="animate-h1">U</span><span className="animate-h1">n</span><span className="animate-h1">c</span><span className="animate-h1">e</span><span className="animate-h1">n</span><span className="animate-h1">s</span><span className="animate-h1">o</span><span className="animate-h1">r</span><span className="animate-h1">a</span><span className="animate-h1">b</span><span className="animate-h1">l</span><span className="animate-h1">e</span><span className="animate-h1 invisible">-</span></div>
+              <div><span className="animate-h1">W</span><span className="animate-h1">e</span><span className="animate-h1">b</span><span className="animate-h1">3</span><span className="animate-h1 invisible">-</span>
+              <span className="animate-h1">C</span><span className="animate-h1">h</span><span className="animate-h1">a</span><span className="animate-h1">t</span></div>
             </h1>
             <p className="mt-8 text-lg font-medium text-pretty dark:text-light-gray sm:text-xl/8">
               Control your communication: Decentralized, peer-to-peer messaging puts you in charge.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <motion.a href="#" className="font-semibold text-secondary hover:text-primary dark:text-primary dark:hover:text-secondary rounded-full w-[40%] py-2.5 border" style={{ backgroundImage: `linear-gradient(to right, ${isDark ? 'white 0%, black 0%' : 'black 0%, white 0%'})` }} whileHover={{ backgroundImage: `linear-gradient(to right, ${isDark ? 'white 100%, black 0%' : 'black 100%, white 0%'}` }}>
+              <motion.a href="/" className="font-semibold text-secondary hover:text-primary dark:text-primary dark:hover:text-secondary rounded-full w-[40%] py-2.5 border" style={{ backgroundImage: `linear-gradient(to right, ${isDark ? 'white 0%, black 0%' : 'black 0%, white 0%'})` }} whileHover={{ backgroundImage: `linear-gradient(to right, ${isDark ? 'white 100%, black 0%' : 'black 100%, white 0%'}` }}>
                 Learn More <span aria-hidden="true">→</span>
               </motion.a>
               <motion.a
                 style={{backgroundImage: `linear-gradient(to right, ${isDark ? 'black 0%, white 0%' : 'white 0%, black 0%'})`}}
                 whileHover={{ backgroundImage: `linear-gradient(to right, ${isDark ? 'black 100%, white 0%' : 'white 100%, black 0%'})`}}
-                href="#"
+                href="/app/chats"
                 className="w-[40%] rounded-full text-primary hover:text-secondary dark:text-secondary dark:hover:text-primary py-2.5 font-semibold shadow-xs border focus-visible:outline-2 focus-visible:outline-offset-2"
               >
                 Launch App

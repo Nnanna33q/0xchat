@@ -4,9 +4,9 @@ import Logo from "../assets/logo";
 import { useState } from "react";
 
 const navigation = [
-    { name: 'Home', href: '#' },
-    { name: 'Features', href: '#' },
-    { name: 'Donate', href: '#' }
+    { name: 'Home', href: '/' },
+    { name: 'Features', href: '/features' },
+    { name: 'Donate', href: '/' }
 ]
 
 export default function Header() {

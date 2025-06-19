@@ -5,7 +5,7 @@ import { mainnet, sepolia, bsc } from "@reown/appkit/networks";
 const  metadata = {
     name: '0xChat',
     description: 'Decentralized messaging platform',
-    url: 'http://localhost:3000'
+    url: 'https://zeroxchat.onrender.com'
 }
 
 export const modal = createAppKit({

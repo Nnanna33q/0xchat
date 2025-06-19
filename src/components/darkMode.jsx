@@ -9,7 +9,7 @@ export default function DarkMode() {
     const darkModeRef = useRef(null);
 
     useEffect(() => {
-        animate(darkModeRef.current, { translateY: '85vh' }, { duration: 1, type: 'spring', bounce: 0.6 })
+        animate(darkModeRef.current, { translateY: window.innerWidth < 640 ? '80vh' : '85vh' }, { duration: 1, type: 'spring', bounce: 0.6 })
     }, [])
 
     const { isDark, setIsDark } = useContext(ThemeContext);

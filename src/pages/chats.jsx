@@ -205,6 +205,7 @@ function Chats() {
                     address: message.message.from,
                     avatar: message.message.avatar,
                     online: message.message.online,
+                    lastLogin: message.message.lastLogin,
                     messages: [message.message]
                 })
                 setChatData(updatedChatData);

@@ -38,12 +38,12 @@ export default function Footer() {
                         <p className="font-semibold text-lg">Subscribe</p>
                         <p className="text-medium-gray dark:text-medium-gray">Subscribe to our newsletter and receive the latest 0xChat news every month</p>
                     </div>
-                    <input className="mt-4 w-full border border-light-gray dark:border-dark-gray backdrop-blur rounded-sm p-2 bg-extremely-light-gray dark:bg-extremely-dark-gray focus:outline focus:outline-secondary dark:focus:outline-primary" type="email" placeholder="Enter Email" />
-                    <button className="w-[50%] border rounded-full mt-4 py-2 bg-secondary dark:bg-primary text-primary dark:text-secondary font-semibold" type="submit">Subscribe</button>
+                    <input className="mt-4 w-full border border-light-gray dark:border-dark-gray backdrop-blur rounded-sm p-3 bg-extremely-light-gray dark:bg-extremely-dark-gray focus:outline focus:outline-secondary dark:focus:outline-primary" type="email" placeholder="Enter Email" />
+                    <button className="w-[50%] border rounded-full mt-4 py-3 bg-secondary dark:bg-primary text-primary dark:text-secondary font-semibold text-lg" type="submit">Subscribe</button>
                 </form>
             </div>
-            <hr className="mt-12 text-light-gray dark:text-dark-gray" />
-            <div className="text-center py-6">Copyright @ {new Date().getFullYear()} 0xChat Inc.</div>
+            <hr className="mt-12 text-very-light-gray dark:text-dark-gray" />
+            <div className="text-center py-6">Copyright {new Date().getFullYear()} 0xChat Inc.</div>
         </footer>
     )
 }

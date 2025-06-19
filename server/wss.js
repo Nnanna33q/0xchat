@@ -185,6 +185,7 @@ wss.on('connection', async (ws, req) => {
                         time: message.time,
                         file: message.file,
                         status: 'delivered',
+                        mediaType: message.mediaType,
                         messageId: message.messageId
                     }
                 }))
