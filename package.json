@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "client": "vite",
+    "test": "npm run build & npm run nodemon",
     "start": "node server/wss.js",
     "nodemon": "nodemon server/wss.js"
   },

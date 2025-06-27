@@ -262,7 +262,7 @@ export default function MessageInput() {
     }
 
     return (
-        <div className="message-input-container sticky bottom-2 px-2 bg-transparent">
+        <div className="message-input-container sticky bottom-4 px-2 bg-transparent">
             <div className="message-input py-2">
                 <div className="input-container flex items-center border border-light-gray rounded-full p-1 bg-primary dark:bg-secondary">
                     <motion.div

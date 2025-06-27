@@ -48,7 +48,7 @@ export default function ChatHeader({ setIsRequestModal, setIsCryptoRequestsModal
 
     return (
         <>
-            <div className={`chat-header p-4 border-b border-light-gray dark:border-dark-gray`}>
+            <div className={`chat-header p-4 border-b border-light-gray dark:border-dark-gray sticky top-0 left-0`}>
                 <div className="flex justify-between lg:block items-center">
                     <div className="block lg:hidden pr-4" onClick={viewChats}>
                         <IconContext value={{ className: "size-6 text-secondary dark:text-primary" }}>
